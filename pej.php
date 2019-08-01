@@ -8,18 +8,29 @@
       .row li{
         font-size: 30px;
       }
+      .imageprofile{
+        margin-left: 70px;
+        
+      }
+      .imageprofile:hover{
+        transition: all 1s;
+        transform: rotate(360deg);
+        border-radius: 50%;
+        padding: 15px;
+        border : 2px solid grey;
+      }
     </style>
   </head>
   <body>
     <div class="header text-center">
-      <h1>Detail Mark Profile</h1>
+      <h1>Detail <?= $_GET['nama'] ?> Profile</h1>
     </div><br>
 
 <div class="container">
 <div class="row px-auto">
-  <div class="col-md-5 border"><img src=" <?= $_GET['image'] ?> " alt="<?= $_GET['nama'] ?>"> </div>
+  <div class="col-md-5 border"><img class="imageprofile" src=" <?= $_GET['image'] ?> " alt="<?= $_GET['nama'] ?>" style="width:300px;height:300px" > </div>
   <div class="col-md-7 border p-5">
-    <ul>
+    <ul> 
       <li>Nama Lengkap: <?= $_GET['nama'] ?></li>
       <li>NIK : <?= $_GET['nik'] ?> </li>
       <li>email: <?= $_GET['email'] ?></li>
