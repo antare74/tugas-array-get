@@ -17,18 +17,18 @@
 
 <div class="container">
 <div class="row px-auto">
-  <div class="col-md-5 border"><img src="https://nowtoronto.com/downloads/34411/download/sachabaroncohen_468.jpg?cb=051cbcb557c3199b4e61d0989fccef2c" alt="No Image"> </div>
+  <div class="col-md-5 border"><img src=" <?= $_GET['image'] ?> " alt="<?= $_GET['nama'] ?>"> </div>
   <div class="col-md-7 border p-5">
     <ul>
-      <li>Nama Lengkap: Mark Abdullah</li>
-      <li>Nomor Telp. : 0829123124xx</li>
-      <li>Alamat: Cipondoh, crown c32</li>
-      <li>Pekerjaan: Enginering</li>
+      <li>Nama Lengkap: <?= $_GET['nama'] ?></li>
+      <li>NIK : <?= $_GET['nik'] ?> </li>
+      <li>email: <?= $_GET['email'] ?></li>
+      <li>Bagian: <?= $_GET['bagian'] ?></li>
     </ul>
   </div>
 </div>
 <br><br>
-<a href="http://localhost/myweb/d4/latihan.php"><button type="button" class="btn btn-primary btn-sm" >Back To Home</button></a>
+<a href="latihan.php"><button type="button" class="btn btn-primary btn-sm" >Back To Home</button></a>
 </div>
 
 
